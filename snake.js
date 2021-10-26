@@ -1,11 +1,9 @@
 let snake = [];
-
 snake[0] = {
     x : 9 * box,
     y : 10 * box
 };
 let d;
-
 document.addEventListener("keydown",direction);
 
 function direction(event){

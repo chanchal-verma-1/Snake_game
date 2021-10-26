@@ -1,5 +1,3 @@
-let snake = [];
-
 const cvs = document.getElementById("snake");
 const ctx = cvs.getcontext("2d");
 

@@ -85,6 +85,10 @@ function draw(){
     }
     
     snake.unshift(newHead);
+
+    ctx.fillStyle = "white";
+    ctx.font = "45px Changa one";
+    ctx.fillText(score,2*box,1.6*box);
 }
 let game = setInterval(draw,100);
 

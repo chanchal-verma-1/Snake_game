@@ -10,12 +10,16 @@ document.addEventListener("keydown",direction);
 function direction(event){
     let key = event.keyCode;
     if( key == 37 && d!="RIGHT" ){
+        left.play();
         d = "LEFT";
     }else if(key == 38 && d!="DOWN" ){
+        up.play();
         d = "UP";
     }else if(key == 39 && d!="LEFT"){
+        right.play();
         d = "RIGHT";
     }else if(key == 40 && d!="UP"){
+        down.play();
         d = "DOWN";
     }
 }

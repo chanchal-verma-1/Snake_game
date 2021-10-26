@@ -24,3 +24,19 @@ let food = {
 }
 let score = 0;
 
+function draw(){
+    
+    ctx.drawImage(ground,0,0);
+    
+    for( let i = 0; i < snake.length ; i++){
+        ctx.fillStyle = ( i == 0 )? "green" : "white";
+        ctx.fillRect(snake[i].x,snake[i].y,box,box);
+        
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(snake[i].x,snake[i].y,box,box);
+    }
+    
+    ctx.drawImage(foodImg, food.x, food.y);
+}
+let game = setInterval(draw,100);
+

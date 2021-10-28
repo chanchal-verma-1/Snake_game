@@ -1,7 +1,7 @@
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
 
-const box = 32;
+const box = 37;
 
  const ground = new Image();
  ground.src = "img/ground.png";
@@ -66,7 +66,7 @@ function collision(head,array){
 
 function draw(){
     
-    ctx.drawImage(ground,0,0);
+    ctx.drawImage(ground,0,0,700,700);
     
     for( let i = 0; i < snake.length ; i++){
         ctx.fillStyle = ( i == 0 )? "green" : "white";
